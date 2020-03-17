@@ -6,12 +6,16 @@ import javax.persistence.*;
 @Entity
 public class Client {
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String nom;
     @OneToOne
     @JoinColumn(name="Sexe")
     Sexe_ref sexe;
+
+    public Client(){
+
+    }
 
     public Client(int id, String nom) {
         this.id = id;
