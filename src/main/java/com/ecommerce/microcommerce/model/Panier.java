@@ -4,29 +4,23 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 
 
 @Entity
-public class Panier {
+public class Panier implements Serializable{
     @Id
     @GeneratedValue
     private int id;
 
-    @OneToOne (fetch=FetchType.LAZY, cascade=CascadeType.ALL)
-    @JoinColumn(name="id_client")
-    private Client client;
+    @Column(name="client")
+
 
     @OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
-    @JoinColumn(name="id_panier_line")
-    private List<Panier_Line> panier_line = new ArrayList<>();
+    @JoinColumn(name="panier_id_depuisPANIER")
+    private Set<Panier_Line> panier_line;
 
     public Panier(){
-    }
-
-    public Panier(int id, Client client, List<Panier_Line> panier_line) {
-        this.id = id;
-        this.client = client;
-       this.panier_line = panier_line;
     }
 
     public int getId() {
@@ -37,19 +31,19 @@ public class Panier {
         this.id = id;
     }
 
-    public Client getClient() {
+  /*  public Client getClient() {
         return client;
     }
 
     public void setClient(Client client) {
         this.client = client;
-    }
+    }*/
 
-    public List<Panier_Line> getPanier_line() {
+    public Set<Panier_Line> getPanier_line() {
         return panier_line;
     }
 
-    public void setPanier_line(List<Panier_Line> panier_line) {
+    public void setPanier_line(Set<Panier_Line> panier_line) {
         this.panier_line = panier_line;
     }
 }
