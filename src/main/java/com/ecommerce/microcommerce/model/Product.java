@@ -26,9 +26,6 @@ public class Product implements Serializable {
     //information que nous ne souhaitons pas exposer
     private int prixAchat;
 
-   // @OneToMany(fetch=FetchType.LAZY, cascade=CascadeType.ALL)
-   // @JoinColumn(name="product_id")
-
     //constructeur par défaut
     public Product() {
     }

@@ -10,6 +10,7 @@ public class Panier_Line implements Serializable {
     private int id;
     private String Date;
 
+
    @OneToOne (fetch= FetchType.LAZY)
     @JoinColumns({
             @JoinColumn(name="Product_id",referencedColumnName = "id"),
