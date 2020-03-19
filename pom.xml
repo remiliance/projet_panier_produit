@@ -126,7 +126,7 @@
 						</executions>
 						<configuration>
 							<imageName>${docker.image.prefix}/${project.artifactId}</imageName>
-							<dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>
+							<dockerDirectory>${docker.image.dockerfile.dir}</dockerDirectory>
 							<serverId>docker-hub</serverId>
 							<registryUrl>https://index.docker.io/v1/</registryUrl>
 							<resources>
