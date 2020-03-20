@@ -1,7 +1,19 @@
-version: '3'
-
+version: '2.2'
+create_docker_job:
+stage: build
 services:
   Mcommerce:
     image: demo
     ports:
       - "9090:9090"
+PWD: ip172-18-0-63-bpq8d7vnctv000b24d2g
+script:
+    - apk add --no-cache openssh-client py-pip python-dev libffi-dev openssl-dev gcc libc-dev make
+    - pip install docker-compose
+    - export DOCKER_HOST=tcp://$PLAYWD.direct.labs.play-with-docker.com:2375
+    - docker-compose down
+    - docker-compose up -d
+environment:
+    name: prod
+    url: http://$PLAYWD-9000.direct.labs.play-with-docker.com
+when: manual
