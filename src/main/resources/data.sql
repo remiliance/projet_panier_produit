@@ -15,8 +15,8 @@ INSERT INTO Panier VALUES(10, 1);
 INSERT INTO Panier VALUES(11, 2);
 
 INSERT INTO Panier_Line VALUES(1, '01/01', 1,'Ordinateur portable',10);
---INSERT INTO Panier_Line VALUES(2, '01/02', 2,'Aspirateur Robot',10);
---INSERT INTO Panier_Line VALUES(3, 'Date', 3,'Table de Ping Pong',10);
---INSERT INTO Panier_Line VALUES(4, '01/02', 1,'Ordinateur portable',11);
---INSERT INTO Panier_Line VALUES(5, '01/02', 2,'Aspirateur Robot',11);
---INSERT INTO Panier_Line VALUES(6, 'Date', 1,'Ordinateur portable',11);
+INSERT INTO Panier_Line VALUES(2, '01/02', 2,'Aspirateur Robot',10);
+INSERT INTO Panier_Line VALUES(3, 'Date', 3,'Table de Ping Pong',10);
+INSERT INTO Panier_Line VALUES(4, '01/02', 1,'Ordinateur portable',11);
+INSERT INTO Panier_Line VALUES(5, '01/02', 2,'Aspirateur Robot',11);
+INSERT INTO Panier_Line VALUES(6, 'Date', 1,'Ordinateur portable',11);
