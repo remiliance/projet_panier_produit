@@ -1,9 +1,9 @@
 package com.ecommerce.microcommerce.web.controller;
 
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+import springfox.documentation.schema.Model;
+
 @Controller
 public class Home {
 
@@ -13,10 +13,21 @@ public class Home {
             return "Hello World !";
         }
 
-    @RequestMapping("/details/{name}")
-    @ResponseBody
-    public String details(@PathVariable String name) {
-        return "Hello "+name;
+      @RequestMapping("/details/{name}")
+      @ResponseBody
+      public String details(@PathVariable String name) {
+           return "Hello "+name;
+       }
+
+
+
+
+
     }
 
-}
+
+
+
+
+
+

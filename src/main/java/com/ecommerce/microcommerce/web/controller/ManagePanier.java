@@ -8,14 +8,15 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.Set;
 
-@Controller
+
+///////CLASSE A SUPPRIMER PLUS TARD ///////
+
+@RestController
 public class ManagePanier {
 
     @Autowired
@@ -30,7 +31,7 @@ public class ManagePanier {
         return "vues/ShowPanier.html";
     }
 
-    @GetMapping("/viewPanier")
+    @RequestMapping(value={"/viewPanier"}, method = RequestMethod.GET)
     public String VoirPanier() {
         return "vues/ShowPanier.html";
     }
