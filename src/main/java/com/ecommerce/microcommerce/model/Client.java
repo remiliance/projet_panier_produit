@@ -18,20 +18,14 @@ public class Client implements Serializable {
     @JoinColumn(name="client_id")
     private Set <Panier> panier;
 
-
     @OneToOne
     @JoinColumn(name="sex_boolean")
     private Sexe_ref sexe;
 
-    @OneToMany(fetch= FetchType.EAGER, cascade = CascadeType.ALL)
+    @OneToMany(fetch= FetchType.LAZY, cascade = CascadeType.ALL)
     @JoinColumn(name ="client_id")
-
-
-
-
-
-    //private Set <Account> accounts;
     private List<Account> accounts= new ArrayList();
+
     public Client()
     {
     }

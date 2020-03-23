@@ -76,7 +76,13 @@ public class PanierController {
     public void supprimerClient(@PathVariable int id) {
 
         clientDao.delete(id);
+    }
 
+    @RequestMapping(value = "/Clients", method = RequestMethod.GET)
+    public MappingJacksonValue listeProduits() {
+        Iterable<Client> clients = clientDao.findAll();
+        MappingJacksonValue clientFiltres = new MappingJacksonValue(clients);
+        return clientFiltres;
     }
 
 }

@@ -1,12 +1,13 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=
+UTF-8" pageEncoding="UTF-8"%>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html;
+charset=UTF-8">
 <title>first jsp called from controller</title>
 </head>
 <body>
 <h1>first jsp called from controller</h1>
+Je m’appelle ${ nom }
 </body>
 </html>
