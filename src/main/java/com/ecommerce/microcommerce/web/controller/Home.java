@@ -1,8 +1,8 @@
 package com.ecommerce.microcommerce.web.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-import springfox.documentation.schema.Model;
 
 @Controller
 public class Home {
@@ -20,10 +20,17 @@ public class Home {
        }
 
 
-
-
-
+    @GetMapping(value="/index")
+    public String VoirIndex() {
+        return "html/index";
     }
+    @GetMapping(value = "/hello")
+    public String sayHello(Model model) {
+        model.addAttribute("nom", "Wick");
+        return "jsp/bjr";
+    }
+
+}
 
 
 
