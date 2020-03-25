@@ -3,11 +3,10 @@ package com.ecommerce.microcommerce.web.controller;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.redirectedUrl;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
 
-import com.ecommerce.microcommerce.dao.*;
+import com.ecommerce.microcommerce.repository.*;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.runner.RunWith;
@@ -25,15 +24,15 @@ public class ClientControllerTest {
     MockMvc mockMvc;
 
     @MockBean
-    private ClientDao clientDao;
+    private ClientRepository clientRepository;
     @MockBean
-    private PanierDao panierDao;
+    private PanierRepository panierRepository;
     @MockBean
-    private Panier_LineDao panier_lineDaoDao;
+    private Panier_LineRepository panier_lineDaoRepository;
     @MockBean
-    private AccountDao Accountdao;
+    private AccountRepository accountdao;
     @MockBean
-    private ProductDao productDao;
+    private ProductRepository productRepository;
 
     @Test
     @DisplayName("Test l'affichage de la page Clients - result.jsp")

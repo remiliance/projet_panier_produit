@@ -1,9 +1,7 @@
-package com.ecommerce.microcommerce.model;
+package com.ecommerce.microcommerce.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Set;
 
 

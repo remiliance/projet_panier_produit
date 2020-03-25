@@ -1,7 +1,7 @@
 package com.ecommerce.microcommerce.web.api;
 
-import com.ecommerce.microcommerce.dao.ProductDao;
-import com.ecommerce.microcommerce.model.Product;
+import com.ecommerce.microcommerce.repository.ProductRepository;
+import com.ecommerce.microcommerce.domain.Product;
 import com.ecommerce.microcommerce.web.exceptions.ProduitIntrouvableException;
 import com.fasterxml.jackson.databind.ser.FilterProvider;
 import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
@@ -25,7 +25,7 @@ import java.util.List;
 public class ProductRestController {
 
     @Autowired
-    private ProductDao productDao;
+    private ProductRepository productRepository;
 
 
     //Récupérer la liste des produits
@@ -34,7 +34,7 @@ public class ProductRestController {
 
     public MappingJacksonValue listeProduits() {
 
-        Iterable<Product> produits = productDao.findAll();
+        Iterable<Product> produits = productRepository.findAll();
 
         SimpleBeanPropertyFilter monFiltre = SimpleBeanPropertyFilter.serializeAllExcept("prixAchat");
 
@@ -54,7 +54,7 @@ public class ProductRestController {
 
     public Product afficherUnProduit(@PathVariable int id) {
 
-        Product produit = productDao.findById(id);
+        Product produit = productRepository.findById(id);
 
         if(produit==null) throw new ProduitIntrouvableException("Le produit avec l'id " + id + " est INTROUVABLE. Écran Bleu si je pouvais.");
 
@@ -66,7 +66,7 @@ public class ProductRestController {
 
     public ResponseEntity<Void> ajouterProduit(@Valid @RequestBody Product product) {
 
-        Product productAdded =  productDao.save(product);
+        Product productAdded =  productRepository.save(product);
 
         if (productAdded == null)
             return ResponseEntity.noContent().build();
@@ -83,13 +83,13 @@ public class ProductRestController {
     @DeleteMapping (value = "/Produits/{id}")
     public void supprimerProduit(@PathVariable int id) {
 
-        productDao.delete(id);
+        productRepository.delete(id);
     }
 
     @PutMapping (value = "/Produits")
     public void updateProduit(@RequestBody Product product) {
 
-        productDao.save(product);
+        productRepository.save(product);
     }
 
 
@@ -97,7 +97,7 @@ public class ProductRestController {
     @GetMapping(value = "test/produits/{prix}")
     public List<Product>  testeDeRequetes(@PathVariable int prix) {
 
-        return productDao.chercherUnProduitCher(400);
+        return productRepository.chercherUnProduitCher(400);
     }
 
 

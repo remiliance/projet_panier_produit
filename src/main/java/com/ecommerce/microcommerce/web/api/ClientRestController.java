@@ -1,10 +1,10 @@
 package com.ecommerce.microcommerce.web.api;
 
-import com.ecommerce.microcommerce.dao.AccountDao;
-import com.ecommerce.microcommerce.dao.ClientDao;
-import com.ecommerce.microcommerce.dao.PanierDao;
-import com.ecommerce.microcommerce.dao.Panier_LineDao;
-import com.ecommerce.microcommerce.model.Client;
+import com.ecommerce.microcommerce.repository.AccountRepository;
+import com.ecommerce.microcommerce.repository.ClientRepository;
+import com.ecommerce.microcommerce.repository.PanierRepository;
+import com.ecommerce.microcommerce.repository.Panier_LineRepository;
+import com.ecommerce.microcommerce.domain.Client;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -20,29 +20,29 @@ import java.net.URI;
 public class ClientRestController {
 
     @Autowired
-    private PanierDao panierDao;
+    private PanierRepository panierRepository;
     @Autowired
-    private ClientDao clientDao;
+    private ClientRepository clientRepository;
     @Autowired
-    private Panier_LineDao panier_lineDao;
+    private Panier_LineRepository panier_lineRepository;
     @Autowired
-    private AccountDao accountDao;
+    private AccountRepository accountRepository;
 
     @GetMapping(value = "/Client/{id}")
     public Client afficherUnClient(@PathVariable int id) {
-        return clientDao.findById(id);
+        return clientRepository.findById(id);
         //  if(produit==null) throw new ProduitIntrouvableException("Le produit avec l'id " + id + " est INTROUVABLE. Écran Bleu si je pouvais.");
     }
 
     @DeleteMapping(value = "/Client/{id}")
     public void supprimerClient(@PathVariable int id) {
 
-        clientDao.delete(id);
+        clientRepository.delete(id);
     }
 
     @RequestMapping(value = "/Clients", method = RequestMethod.GET)
     public MappingJacksonValue listeProduits() {
-        Iterable<Client> clients = clientDao.findAll();
+        Iterable<Client> clients = clientRepository.findAll();
         MappingJacksonValue clientFiltres = new MappingJacksonValue(clients);
         return clientFiltres;
     }
@@ -52,7 +52,7 @@ public class ClientRestController {
     @PostMapping(value = "/Client")
     public ResponseEntity<Void> ajouterClient(@Valid @RequestBody Client client) {
 
-        Client clientAdded =  clientDao.save(client);
+        Client clientAdded =  clientRepository.save(client);
 
         if (clientAdded == null)
             return ResponseEntity.noContent().build();

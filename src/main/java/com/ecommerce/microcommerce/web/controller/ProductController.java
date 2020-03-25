@@ -1,14 +1,13 @@
 package com.ecommerce.microcommerce.web.controller;
 
-import com.ecommerce.microcommerce.dao.ProductDao;
-import com.ecommerce.microcommerce.model.Product;
+import com.ecommerce.microcommerce.repository.ProductRepository;
+import com.ecommerce.microcommerce.domain.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -17,13 +16,13 @@ import java.util.Map;
 public class ProductController {
 
     @Autowired
-    private ProductDao productDao;
+    private ProductRepository productRepository;
 
     @RequestMapping(value={"/viewProduct"}, method = RequestMethod.GET)
     public ModelAndView VoirListeProduit() {
 
         Map<String, Object> model = new HashMap<String, Object>();
-        List<Product> watchlist =productDao.findAll();
+        List<Product> watchlist = productRepository.findAll();
        /* List<Product> products = new ArrayList<>();
         products.add(new Product(1, new String ("Ordinateur portable" ), 350, 120));
         products.add(new Product(2, new String ("Aspirateur Robot" ), 500, 120));

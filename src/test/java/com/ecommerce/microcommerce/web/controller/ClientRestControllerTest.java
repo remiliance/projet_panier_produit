@@ -1,7 +1,7 @@
 package com.ecommerce.microcommerce.web.controller;
-import com.ecommerce.microcommerce.dao.*;
+import com.ecommerce.microcommerce.repository.*;
 import org.junit.Test;
-import com.ecommerce.microcommerce.model.Client;
+import com.ecommerce.microcommerce.domain.Client;
 
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,14 +18,6 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
-import java.util.Arrays;
-import java.util.List;
-
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
-
-import static org.junit.jupiter.api.Assertions.*;
-
 //***************************************************
 // NB : bien mettre import org.junit.Test et non "api"
 //****************************************************
@@ -37,15 +29,15 @@ public class ClientRestControllerTest {
     private MockMvc mvc;
 
     @MockBean
-    private ClientDao clientDao;
+    private ClientRepository clientRepository;
     @MockBean
-    private PanierDao panierDao;
+    private PanierRepository panierRepository;
     @MockBean
-    private Panier_LineDao panier_lineDaoDao;
+    private Panier_LineRepository panier_lineDaoRepository;
     @MockBean
-    private AccountDao Accountdao;
+    private AccountRepository accountdao;
     @MockBean
-    private ProductDao productDao;
+    private ProductRepository productRepository;
 
     @Test
     public void findAll() throws Exception {
@@ -55,7 +47,7 @@ public class ClientRestControllerTest {
         client.setNom("Remi");
 
         List<Client> clients = Arrays.asList(client);
-        given(clientDao.findAll()).willReturn(clients);
+        given(clientRepository.findAll()).willReturn(clients);
 
         // when + then
         this.mvc.perform(get("/Clients"))

@@ -1,31 +1,20 @@
 package com.ecommerce.microcommerce.web.controller;
 
-import com.ecommerce.microcommerce.dao.ClientDao;
-import com.ecommerce.microcommerce.model.Client;
-import com.ecommerce.microcommerce.model.Product;
-import com.ecommerce.microcommerce.model.Sexe_ref;
-import io.swagger.annotations.ApiOperation;
+import com.ecommerce.microcommerce.repository.ClientRepository;
+import com.ecommerce.microcommerce.domain.Client;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
-import org.springframework.http.converter.json.MappingJacksonValue;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 
-import javax.validation.Valid;
-import java.net.URI;
-import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Controller
 public class ClientController {
 
         @Autowired
-        private ClientDao clientdao;
+        private ClientRepository clientdao;
 
 
 

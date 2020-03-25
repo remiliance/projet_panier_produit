@@ -1,4 +1,4 @@
-package com.ecommerce.microcommerce.model;
+package com.ecommerce.microcommerce.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.validator.constraints.Length;
@@ -6,7 +6,6 @@ import org.hibernate.validator.constraints.Length;
 import javax.persistence.*;
 import javax.validation.constraints.Min;
 import java.io.Serializable;
-import java.util.Set;
 
 @Entity
 //@JsonFilter("monFiltreDynamique")
