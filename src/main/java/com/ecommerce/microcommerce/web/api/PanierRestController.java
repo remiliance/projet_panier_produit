@@ -1,4 +1,4 @@
-package com.ecommerce.microcommerce.web.controller;
+package com.ecommerce.microcommerce.web.api;
 
 import com.ecommerce.microcommerce.dao.*;
 import com.ecommerce.microcommerce.model.*;

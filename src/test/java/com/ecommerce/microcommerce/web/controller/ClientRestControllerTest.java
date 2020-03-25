@@ -10,9 +10,6 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
-
-
-
 import java.util.Arrays;
 import java.util.List;
 
@@ -65,4 +62,6 @@ public class ClientRestControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().json("[{'id': 1,'nom': 'Remi'}]"));
     }
+
+
 }

@@ -9,6 +9,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import com.ecommerce.microcommerce.dao.*;
 import org.junit.Test;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -25,7 +26,6 @@ public class ClientControllerTest {
 
     @MockBean
     private ClientDao clientDao;
-
     @MockBean
     private PanierDao panierDao;
     @MockBean
@@ -36,6 +36,7 @@ public class ClientControllerTest {
     private ProductDao productDao;
 
     @Test
+    @DisplayName("Test l'affichage de la page Clients - result.jsp")
     public void testShowClient() throws Exception {
        mockMvc.perform(get("/viewClient"))
                 .andExpect(status().is2xxSuccessful())
@@ -43,4 +44,17 @@ public class ClientControllerTest {
                .andExpect(model().size(2))
                .andExpect(model().attributeExists("watchlist"));
     }
+
+
+    @Test
+    @DisplayName("Test l'ajout d'un client")
+    public void testSubmitNewClient() throws Exception {
+        mockMvc.perform(post("/addClient")
+                .param("nom", "Remil"))
+                .andExpect(view().name("jsp/confirmAddClient"))
+                .andExpect(model().attributeExists("nom"))
+                .andExpect(model().attribute("nom", "Remil"));
+    }
 }
+
+
