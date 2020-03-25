@@ -1,4 +1,4 @@
-package com.ecommerce.microcommerce.domain;
+package com.ecommerce.microcommerce.dao.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;

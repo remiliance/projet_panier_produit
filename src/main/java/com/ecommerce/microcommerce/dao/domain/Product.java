@@ -1,4 +1,4 @@
-package com.ecommerce.microcommerce.domain;
+package com.ecommerce.microcommerce.dao.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.hibernate.validator.constraints.Length;
@@ -25,16 +25,27 @@ public class Product implements Serializable {
     //information que nous ne souhaitons pas exposer
     private int prixAchat;
 
+    private String rating;
+
     //constructeur par défaut
     public Product() {
     }
 
     //constructeur pour nos tests
-    public Product(int id, String nom, int prix, int prixAchat) {
+    public Product(int id, String nom, int prix, int prixAchat, String rating) {
         this.id = id;
         this.nom = nom;
         this.prix = prix;
         this.prixAchat = prixAchat;
+        this.rating=rating;
+    }
+
+    public String getRating() {
+        return rating;
+    }
+
+    public void setRating(String rating) {
+        this.rating = rating;
     }
 
     public int getId() {

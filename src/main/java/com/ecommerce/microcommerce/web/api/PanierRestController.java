@@ -1,7 +1,10 @@
 package com.ecommerce.microcommerce.web.api;
 
-import com.ecommerce.microcommerce.repository.*;
-import com.ecommerce.microcommerce.domain.*;
+import com.ecommerce.microcommerce.dao.domain.Panier;
+import com.ecommerce.microcommerce.dao.domain.Panier_Line;
+import com.ecommerce.microcommerce.dao.repository.AccountRepository;
+import com.ecommerce.microcommerce.dao.repository.PanierRepository;
+import com.ecommerce.microcommerce.dao.repository.Panier_LineRepository;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -10,8 +13,8 @@ import java.util.List;
 
 @RestController
 public class PanierRestController {
-  @Autowired
-  private PanierRepository panierRepository;
+    @Autowired
+    private PanierRepository panierRepository;
 
     @Autowired
     private Panier_LineRepository panier_lineRepository;
@@ -23,24 +26,22 @@ public class PanierRestController {
     @GetMapping(value = "/Panier/{id}")
     public Panier afficherUnPanier(@PathVariable int id) {
         Panier panier = panierRepository.findById(id);
-      //  if(produit==null) throw new ProduitIntrouvableException("Le produit avec l'id " + id + " est INTROUVABLE. Écran Bleu si je pouvais.");
+        //  if(produit==null) throw new ProduitIntrouvableException("Le produit avec l'id " + id + " est INTROUVABLE. Écran Bleu si je pouvais.");
         return panier;
     }
 
 
-
-    @DeleteMapping (value = "/Panier/{id}")
+    @DeleteMapping(value = "/Panier/{id}")
     public void supprimerPanier(@PathVariable int id) {
 
         //clientDao.delete(id);
-      panierRepository.delete(id);
+        panierRepository.delete(id);
     }
 
     @RequestMapping(value = "/PanierLine", method = RequestMethod.GET)
     public List<Panier_Line> listePanierLine() {
         return panier_lineRepository.findAll();
     }
-
 
 
 }

@@ -1,14 +1,18 @@
 package com.ecommerce.microcommerce.web.controller;
 
-import com.ecommerce.microcommerce.repository.PanierRepository;
-import com.ecommerce.microcommerce.domain.Panier;
-import com.ecommerce.microcommerce.domain.Panier_Line;
+import com.ecommerce.microcommerce.dao.repository.PanierRepository;
+import com.ecommerce.microcommerce.dao.domain.Panier;
+import com.ecommerce.microcommerce.dao.domain.Panier_Line;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Set;
+
+// Ne marche pas!
+// A refactorer!
+
 
 @Controller
 public class PanierController {
@@ -29,8 +33,5 @@ public class PanierController {
     public String VoirPanier() {
         return "html/ShowPanier";
     }
-
-
-
 
 }

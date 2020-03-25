@@ -1,6 +1,6 @@
-package com.ecommerce.microcommerce.repository;
+package com.ecommerce.microcommerce.dao.repository;
 
-import com.ecommerce.microcommerce.domain.Product;
+import com.ecommerce.microcommerce.dao.domain.Product;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

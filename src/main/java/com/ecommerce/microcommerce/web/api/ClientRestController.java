@@ -1,10 +1,10 @@
 package com.ecommerce.microcommerce.web.api;
 
-import com.ecommerce.microcommerce.repository.AccountRepository;
-import com.ecommerce.microcommerce.repository.ClientRepository;
-import com.ecommerce.microcommerce.repository.PanierRepository;
-import com.ecommerce.microcommerce.repository.Panier_LineRepository;
-import com.ecommerce.microcommerce.domain.Client;
+import com.ecommerce.microcommerce.dao.repository.AccountRepository;
+import com.ecommerce.microcommerce.dao.repository.ClientRepository;
+import com.ecommerce.microcommerce.dao.repository.PanierRepository;
+import com.ecommerce.microcommerce.dao.repository.Panier_LineRepository;
+import com.ecommerce.microcommerce.dao.domain.Client;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

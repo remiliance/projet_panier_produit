@@ -1,7 +1,7 @@
 package com.ecommerce.microcommerce.web.controller;
-import com.ecommerce.microcommerce.repository.*;
+import com.ecommerce.microcommerce.dao.repository.*;
 import org.junit.Test;
-import com.ecommerce.microcommerce.domain.Client;
+import com.ecommerce.microcommerce.dao.domain.Client;
 
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;

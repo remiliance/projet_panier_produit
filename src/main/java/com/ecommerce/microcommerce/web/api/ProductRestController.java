@@ -1,7 +1,7 @@
 package com.ecommerce.microcommerce.web.api;
 
-import com.ecommerce.microcommerce.repository.ProductRepository;
-import com.ecommerce.microcommerce.domain.Product;
+import com.ecommerce.microcommerce.dao.repository.ProductRepository;
+import com.ecommerce.microcommerce.dao.domain.Product;
 import com.ecommerce.microcommerce.web.exceptions.ProduitIntrouvableException;
 import com.fasterxml.jackson.databind.ser.FilterProvider;
 import com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter;
