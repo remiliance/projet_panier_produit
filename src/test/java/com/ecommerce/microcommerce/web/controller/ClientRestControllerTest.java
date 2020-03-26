@@ -2,9 +2,11 @@ package com.ecommerce.microcommerce.web.controller;
 
 import com.ecommerce.microcommerce.dao.repository.*;
 import com.ecommerce.microcommerce.service.ClientService;
+import com.ecommerce.microcommerce.service.ProductService;
 import org.junit.Test;
 import com.ecommerce.microcommerce.dao.domain.Client;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -29,33 +31,37 @@ public class ClientRestControllerTest {
 
     @Autowired
     private MockMvc mvc;
-    @MockBean
-    private ClientRepository clientdao;
+
     @MockBean
     private ClientService clientService;
+    @MockBean
+    private ProductService productService;
+    @MockBean
+    private ClientRepository clientRepository;
     @MockBean
     private PanierRepository panierRepository;
     @MockBean
     private Panier_LineRepository panier_lineDaoRepository;
     @MockBean
-    private AccountRepository accountdao;
+    private AccountRepository accountRepository;
     @MockBean
     private ProductRepository productRepository;
 
     @Test
-    public void ViewClientPage() throws Exception {
+    @DisplayName("Test API Get Clients")
+    public void findAll() throws Exception {
         // given
         Client client = new Client();
         client.setId(1);
         client.setNom("Remi");
 
         List<Client> clients = Arrays.asList(client);
-        given(clientService.ViewAllClient()).willReturn(clients);
+        given(clientRepository.findAll()).willReturn(clients);
 
         // when + then
         this.mvc.perform(get("/Clients"))
                 .andExpect(status().isOk())
-                .andExpect(content().json("[{'id': 1,'nom': 'Twilight'}]"));
+                .andExpect(content().json("[{'id': 1,'nom': 'Remi'}]"));
     }
 
 
