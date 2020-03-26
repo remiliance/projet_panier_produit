@@ -1,5 +1,6 @@
 package com.ecommerce.microcommerce.service;
 
+import com.ecommerce.microcommerce.dao.Jpa.JpaProductRepository;
 import com.ecommerce.microcommerce.dao.domain.Client;
 import com.ecommerce.microcommerce.dao.domain.Product;
 import com.ecommerce.microcommerce.dao.repository.ProductRepository;
@@ -12,7 +13,7 @@ import java.util.List;
 public class ProductService {
 
     private ProductRatingService productRatingService;
-    private ProductRepository productRepository;
+    private ProductRepository productRepository = new JpaProductRepository();
 
     @Autowired
     public ProductService(ProductRepository productRepository, ProductRatingService productRatingService) {
