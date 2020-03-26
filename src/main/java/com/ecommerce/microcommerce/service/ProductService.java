@@ -1,5 +1,6 @@
 package com.ecommerce.microcommerce.service;
 
+import com.ecommerce.microcommerce.dao.domain.Client;
 import com.ecommerce.microcommerce.dao.domain.Product;
 import com.ecommerce.microcommerce.dao.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,8 +11,15 @@ import java.util.List;
 @Service
 public class ProductService {
 
-    @Autowired
     private ProductRatingService productRatingService;
+    private ProductRepository productRepository;
+
+    @Autowired
+    public ProductService(ProductRepository productRepository, ProductRatingService productRatingService) {
+        super();
+        this.productRepository = productRepository;
+        this.productRatingService = productRatingService;
+    }
 
     public void assignRating(List<Product> listItems) {
         //  List<Product> listItems = productRepository.findAll();
@@ -24,4 +32,10 @@ public class ProductService {
             }
         }
     }
+
+    public List<Product> ViewAllProduct()
+    {
+        return productRepository.findAll();
+    }
+
 }

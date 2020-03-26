@@ -29,7 +29,8 @@ public class ClientRestControllerTest {
 
     @Autowired
     private MockMvc mvc;
-
+    @MockBean
+    private ClientRepository clientdao;
     @MockBean
     private ClientService clientService;
     @MockBean
@@ -42,7 +43,7 @@ public class ClientRestControllerTest {
     private ProductRepository productRepository;
 
     @Test
-    public void findAll() throws Exception {
+    public void ViewClientPage() throws Exception {
         // given
         Client client = new Client();
         client.setId(1);

@@ -16,27 +16,14 @@ import java.util.Map;
 @Controller
 public class ProductController {
 
-    private ProductRepository productRepository;
+    @Autowired
     private ProductService productService;
-
-    @Autowired
-    public ProductController(ProductRepository productRepository, ProductService productService) {
-        super();
-        this.productRepository = productRepository;
-        this.productService = productService;
-    }
-    //*******équivalent à :
-   /* @Autowired
-    private ProductRepository productRepository;
-    @Autowired
-    private ProductService productService; //=new ProductService();*/
-    //NB : il faut bien mettre @Service dans les classes appelées
 
     @RequestMapping(value = {"/viewProduct"}, method = RequestMethod.GET)
     public ModelAndView VoirListeProduitetAssignerRating() {
 
         Map<String, Object> model = new HashMap<String, Object>();
-        List<Product> watchlist = productRepository.findAll();
+        List<Product> watchlist = productService.ViewAllProduct();
         productService.assignRating(watchlist);
 
        /* List<Product> products = new ArrayList<>();

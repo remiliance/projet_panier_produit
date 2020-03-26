@@ -27,6 +27,9 @@ public class ClientControllerTest {
     @MockBean
     private ClientService clientService;
 
+    @Autowired
+    private ClientRepository clientdao;
+
     @MockBean
     private PanierRepository panierRepository;
     @MockBean
