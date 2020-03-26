@@ -4,22 +4,17 @@ import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Optional;
 
-import com.ecommerce.microcommerce.dao.Jpa.JpaProductRepository;
 import com.ecommerce.microcommerce.dao.domain.Product;
 import com.ecommerce.microcommerce.dao.repository.ProductRepository;
 import org.junit.Test;
 
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.runners.MockitoJUnitRunner;
-import org.springframework.boot.test.mock.mockito.MockBean;
 
 import static org.assertj.core.api.Assertions.*;
 
@@ -33,7 +28,7 @@ public class ProductServiceTest {
     private ProductRepository productRepositoryMock;
 
     @Mock
-    private ProductRatingService productRatingServiceMock;
+    private ProductRatingServiceImpl productRatingServiceImplMock;
 
 
     @Test
@@ -61,7 +56,7 @@ public class ProductServiceTest {
         //GIVEN
         List<Product> products = new ArrayList<Product>();
         products.add(new Product(1, new String("Ordinateur portable"), 350, 120, "0"));
-        when(productRatingServiceMock.getProductRating(products.get(0).getNom())).thenReturn("10");
+        when(productRatingServiceImplMock.getProductRating(products.get(0).getNom())).thenReturn("10");
         //ou : ...getProductRating(any(String.class)))
         //WHEN
         productService.assignRating(products);

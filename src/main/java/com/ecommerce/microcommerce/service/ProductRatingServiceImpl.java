@@ -6,7 +6,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 @Service
-public class ProductRatingService {
+public class ProductRatingServiceImpl {
 
         String apiUrl = "http://www.omdbapi.com/?i=tt3896198&apikey=dd01726a&t=";
 
