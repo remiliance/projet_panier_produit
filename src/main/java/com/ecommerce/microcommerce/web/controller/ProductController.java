@@ -1,8 +1,8 @@
 package com.ecommerce.microcommerce.web.controller;
 
-import com.ecommerce.microcommerce.dao.repository.ProductRepository;
 import com.ecommerce.microcommerce.dao.domain.Product;
 import com.ecommerce.microcommerce.service.ProductService;
+import com.ecommerce.microcommerce.service.ProductServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

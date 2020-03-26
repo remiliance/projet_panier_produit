@@ -2,7 +2,7 @@ package com.ecommerce.microcommerce.web.controller;
 
 import com.ecommerce.microcommerce.dao.repository.*;
 import com.ecommerce.microcommerce.service.ClientService;
-import com.ecommerce.microcommerce.service.ProductService;
+import com.ecommerce.microcommerce.service.ProductServiceImpl;
 import org.junit.Test;
 import com.ecommerce.microcommerce.dao.domain.Client;
 
@@ -35,7 +35,7 @@ public class ClientRestControllerTest {
     @MockBean
     private ClientService clientService;
     @MockBean
-    private ProductService productService;
+    private ProductServiceImpl productServiceImpl;
     @MockBean
     private ClientRepository clientRepository;
     @MockBean

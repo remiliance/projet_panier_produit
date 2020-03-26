@@ -22,13 +22,13 @@ import static org.assertj.core.api.Assertions.*;
 public class ProductServiceTest {
 
     @InjectMocks
-    private ProductService productService;
+    private ProductServiceImpl productServiceImpl;
 
     @Mock
     private ProductRepository productRepositoryMock;
 
     @Mock
-    private ProductRatingServiceImpl productRatingServiceImplMock;
+    private ProductRatingService productRatingServiceMock;
 
 
     @Test
@@ -42,7 +42,7 @@ public class ProductServiceTest {
         products.add(new Product(3, new String("Table de Ping Pong"), 500, 120, "0"));
         when(productRepositoryMock.findAll()).thenReturn(products);
         //WHEN
-         List<Product> result = productService.ViewAllProduct();
+         List<Product> result = productServiceImpl.ViewAllProduct();
 
         //THEN
         assertThat(result.size()).isEqualTo(3);
@@ -56,10 +56,10 @@ public class ProductServiceTest {
         //GIVEN
         List<Product> products = new ArrayList<Product>();
         products.add(new Product(1, new String("Ordinateur portable"), 350, 120, "0"));
-        when(productRatingServiceImplMock.getProductRating(products.get(0).getNom())).thenReturn("10");
+        when(productRatingServiceMock.getProductRating(products.get(0).getNom())).thenReturn("10");
         //ou : ...getProductRating(any(String.class)))
         //WHEN
-        productService.assignRating(products);
+        productServiceImpl.assignRating(products);
         //THEN
         assertThat(products.get(0).getRating()).isEqualTo("10");
     }

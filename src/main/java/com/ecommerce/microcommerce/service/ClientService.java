@@ -12,7 +12,7 @@ import java.util.List;
 public class ClientService {
 
     @Autowired
-    private ClientRepository clientRepository=new JpaClientRepository();
+    private ClientRepository clientRepository;
 
     public void AddClient(String nom)
     {

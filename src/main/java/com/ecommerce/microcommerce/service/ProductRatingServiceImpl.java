@@ -1,12 +1,14 @@
 package com.ecommerce.microcommerce.service;
 
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
+@ConditionalOnProperty(name = "app.environment", havingValue = "prod")
 @Service
-public class ProductRatingServiceImpl {
+public class ProductRatingServiceImpl implements ProductRatingService {
 
         String apiUrl = "http://www.omdbapi.com/?i=tt3896198&apikey=dd01726a&t=";
 
