@@ -19,7 +19,7 @@ import java.net.URI;
 import java.util.List;
 
 
-@Api( description="API pour es opérations CRUD sur les produits.")
+@Api(description = "API pour es opérations CRUD sur les produits.")
 
 @RestController
 public class ProductRestController {
@@ -56,7 +56,8 @@ public class ProductRestController {
 
         Product produit = productRepository.findById(id);
 
-        if(produit==null) throw new ProduitIntrouvableException("Le produit avec l'id " + id + " est INTROUVABLE. Écran Bleu si je pouvais.");
+        if (produit == null)
+            throw new ProduitIntrouvableException("Le produit avec l'id " + id + " est INTROUVABLE. Écran Bleu si je pouvais.");
 
         return produit;
     }
@@ -66,7 +67,7 @@ public class ProductRestController {
 
     public ResponseEntity<Void> ajouterProduit(@Valid @RequestBody Product product) {
 
-        Product productAdded =  productRepository.save(product);
+        Product productAdded = productRepository.save(product);
 
         if (productAdded == null)
             return ResponseEntity.noContent().build();
@@ -80,13 +81,13 @@ public class ProductRestController {
         return ResponseEntity.created(location).build();
     }
 
-    @DeleteMapping (value = "/Produits/{id}")
+    @DeleteMapping(value = "/Produits/{id}")
     public void supprimerProduit(@PathVariable int id) {
 
         productRepository.delete(id);
     }
 
-    @PutMapping (value = "/Produits")
+    @PutMapping(value = "/Produits")
     public void updateProduit(@RequestBody Product product) {
 
         productRepository.save(product);
@@ -95,11 +96,10 @@ public class ProductRestController {
 
     //Pour les tests
     @GetMapping(value = "test/produits/{prix}")
-    public List<Product>  testeDeRequetes(@PathVariable int prix) {
+    public List<Product> testeDeRequetes(@PathVariable int prix) {
 
         return productRepository.chercherUnProduitCher(400);
     }
-
 
 
 }

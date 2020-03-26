@@ -22,14 +22,14 @@ public class PanierController {
 
     @GetMapping("/viewPanier/{id}")
     public String VoirPanier(final ModelMap pModel,
-                             @RequestParam(value="id") final int id) {
+                             @RequestParam(value = "id") final int id) {
         Panier panier = panierRepository.findById(id);
         Set<Panier_Line> catalog = panier.getPanier_line();
         pModel.addAttribute("catalog", catalog);
         return "html/ShowPanier";
     }
 
-    @RequestMapping(value={"/viewPanier"}, method = RequestMethod.GET)
+    @RequestMapping(value = {"/viewPanier"}, method = RequestMethod.GET)
     public String VoirPanier() {
         return "html/ShowPanier";
     }

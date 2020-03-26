@@ -52,7 +52,7 @@ public class ClientRestController {
     @PostMapping(value = "/Client")
     public ResponseEntity<Void> ajouterClient(@Valid @RequestBody Client client) {
 
-        Client clientAdded =  clientRepository.save(client);
+        Client clientAdded = clientRepository.save(client);
 
         if (clientAdded == null)
             return ResponseEntity.noContent().build();

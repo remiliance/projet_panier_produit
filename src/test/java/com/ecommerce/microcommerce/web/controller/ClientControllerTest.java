@@ -7,6 +7,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
 
 import com.ecommerce.microcommerce.dao.repository.*;
+import com.ecommerce.microcommerce.service.ClientService;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.runner.RunWith;
@@ -24,7 +25,8 @@ public class ClientControllerTest {
     MockMvc mockMvc;
 
     @MockBean
-    private ClientRepository clientRepository;
+    private ClientService clientService;
+
     @MockBean
     private PanierRepository panierRepository;
     @MockBean

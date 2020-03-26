@@ -1,5 +1,7 @@
 package com.ecommerce.microcommerce.web.controller;
+
 import com.ecommerce.microcommerce.dao.repository.*;
+import com.ecommerce.microcommerce.service.ClientService;
 import org.junit.Test;
 import com.ecommerce.microcommerce.dao.domain.Client;
 
@@ -29,7 +31,7 @@ public class ClientRestControllerTest {
     private MockMvc mvc;
 
     @MockBean
-    private ClientRepository clientRepository;
+    private ClientService clientService;
     @MockBean
     private PanierRepository panierRepository;
     @MockBean
@@ -47,12 +49,12 @@ public class ClientRestControllerTest {
         client.setNom("Remi");
 
         List<Client> clients = Arrays.asList(client);
-        given(clientRepository.findAll()).willReturn(clients);
+        given(clientService.ViewAllClient()).willReturn(clients);
 
         // when + then
         this.mvc.perform(get("/Clients"))
                 .andExpect(status().isOk())
-                .andExpect(content().json("[{'id': 1,'nom': 'Remi'}]"));
+                .andExpect(content().json("[{'id': 1,'nom': 'Twilight'}]"));
     }
 
 
