@@ -1,7 +1,6 @@
 package com.ecommerce.microcommerce.service;
 
 import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.when;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,14 +8,14 @@ import java.util.List;
 import com.ecommerce.microcommerce.dao.domain.Product;
 import com.ecommerce.microcommerce.dao.repository.ProductRepository;
 import org.junit.Test;
-
 import org.junit.jupiter.api.DisplayName;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
-import org.mockito.Mock;
+import org.mockito.*;
 import org.mockito.runners.MockitoJUnitRunner;
 
 import static org.assertj.core.api.Assertions.*;
+import static org.mockito.Mockito.*;
 
 @RunWith(MockitoJUnitRunner.class)
 public class ProductServiceTest {
@@ -45,6 +44,7 @@ public class ProductServiceTest {
          List<Product> result = productServiceImpl.ViewAllProduct();
 
         //THEN
+        verify(productRepositoryMock, times(1)).findAll();
         assertThat(result.size()).isEqualTo(3);
         assertThat(result.get(0).getNom()).isEqualTo("Ordinateur portable");
         assertThat(result.get(1).getNom()).isEqualTo("Aspirateur Robot");
@@ -61,6 +61,7 @@ public class ProductServiceTest {
         //WHEN
         productServiceImpl.assignRating(products);
         //THEN
+        verify(productRatingServiceMock, times(1)).getProductRating("Ordinateur portable");
         assertThat(products.get(0).getRating()).isEqualTo("10");
     }
 }
