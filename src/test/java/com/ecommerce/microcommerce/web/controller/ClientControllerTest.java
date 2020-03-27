@@ -1,5 +1,5 @@
 package com.ecommerce.microcommerce.web.controller;
-
+import org.junit.Test;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
@@ -9,7 +9,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import com.ecommerce.microcommerce.dao.repository.*;
 import com.ecommerce.microcommerce.service.ClientService;
 import com.ecommerce.microcommerce.service.ProductServiceImpl;
-import org.junit.Test;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
