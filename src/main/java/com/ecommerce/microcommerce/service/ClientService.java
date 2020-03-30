@@ -9,22 +9,9 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class ClientService {
+public interface ClientService {
 
-    @Autowired
-    private ClientRepository clientRepository;
-
-    public void AddClient(String nom)
-    {
-        Client p1 = new Client();
-        p1.setNom(nom);
-      clientRepository.save(p1);
-    }
-
-    public List<Client> ViewAllClient()
-    {
-        return clientRepository.findAll();
-    }
-
+    public void AddClient(String nom);
+    public List<Client> ViewAllClient();
 
 }

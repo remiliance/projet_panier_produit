@@ -5,9 +5,27 @@
 <head>
     <title>Premier essai</title>
 </head>
-
+<h1 th:text="#{greeting}"></h1>
 <body>
-Bonjour le monde.
+<span th:text="#{lang.change}"></span>:
+<select id="locales">
+    <option value=""></option>
+    <option value="en" th:text="#{lang.eng}"></option>
+    <option value="fr" th:text="#{lang.fr}"></option>
+</select>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $("#locales").change(function () {
+        var selectedOption = $('#locales').val();
+        if (selectedOption != ''){
+            window.location.replace('index?lang=' + selectedOption);
+        }
+    });
+});
+</script>
 
 </html>

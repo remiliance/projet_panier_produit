@@ -1,29 +1,45 @@
 package com.ecommerce.microcommerce.web.controller;
+
 import org.junit.Test;
+
+import org.junit.jupiter.api.extension.ExtendWith;
+
+import org.junit.jupiter.api.DisplayName;
+
+import org.junit.runner.RunWith;
+import org.mockito.runners.MockitoJUnitRunner;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+
+import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
+
+import org.springframework.test.context.junit4.SpringRunner;
+import org.springframework.test.web.servlet.MockMvc;
+import com.ecommerce.microcommerce.dao.repository.*;
+import com.ecommerce.microcommerce.service.ClientService;
+import com.ecommerce.microcommerce.service.ProductServiceImpl;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.model;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
 
-import com.ecommerce.microcommerce.dao.repository.*;
-import com.ecommerce.microcommerce.service.ClientService;
-import com.ecommerce.microcommerce.service.ProductServiceImpl;
 
-import org.junit.jupiter.api.DisplayName;
-import org.junit.runner.RunWith;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.test.web.servlet.MockMvc;
+@WebMvcTest(controllers={ClientController.class})
+//@RunWith(SpringRunner.class)
+//@ExtendWith({MockitoExtension.class}) //BUG sur le RUNNER
+//@ExtendWith(value=org.springframework.test.context.junit.jupiter.SpringExtension.class)
+@RunWith(MockitoJUnitRunner.class)
+//@ExtendWith(SpringExtension.class)
 
-@RunWith(SpringRunner.class)
-@WebMvcTest
 public class ClientControllerTest {
 
     @Autowired
-    MockMvc mockMvc;
+    private ClientController clientControllerUnderTest;
+    @Autowired
+    private  MockMvc mockMvc;
 
     @MockBean
     private ClientService clientService;
@@ -40,7 +56,10 @@ public class ClientControllerTest {
     @MockBean
     private ProductRepository productRepository;
 
+
+
     @Test
+  // @Ignore
     @DisplayName("Test l'affichage de la page Clients - result.jsp")
     public void testShowClient() throws Exception {
        mockMvc.perform(get("/viewClient"))
@@ -49,7 +68,6 @@ public class ClientControllerTest {
                .andExpect(model().size(2))
                .andExpect(model().attributeExists("watchlist"));
     }
-
 
     @Test
     @DisplayName("Test l'ajout d'un client")

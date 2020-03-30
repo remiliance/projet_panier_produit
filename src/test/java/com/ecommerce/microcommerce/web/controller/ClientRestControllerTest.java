@@ -3,14 +3,19 @@ package com.ecommerce.microcommerce.web.controller;
 import com.ecommerce.microcommerce.dao.repository.*;
 import com.ecommerce.microcommerce.service.ClientService;
 import com.ecommerce.microcommerce.service.ProductServiceImpl;
+import com.ecommerce.microcommerce.web.api.ClientRestController;
 import org.junit.Test;
 import com.ecommerce.microcommerce.dao.domain.Client;
 
-import org.junit.jupiter.api.DisplayName;
+
+
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.runner.RunWith;
+import org.mockito.InjectMocks;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
@@ -48,7 +53,7 @@ public class ClientRestControllerTest {
     private ProductRepository productRepository;
 
     @Test
-    @DisplayName("Test API Get Clients")
+ //   @DisplayName("Test API Get Clients")
     public void findAll() throws Exception {
         // given
         Client client = new Client();
@@ -63,6 +68,4 @@ public class ClientRestControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(content().json("[{'id': 1,'nom': 'Remi'}]"));
     }
-
-
 }
