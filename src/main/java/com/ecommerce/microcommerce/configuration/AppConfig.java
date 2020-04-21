@@ -25,7 +25,7 @@ public class AppConfig implements WebMvcConfigurer {
 
 
 
-    ////// ICI ; UTILISE L'internationalisation///////////////
+    ////// ICI ; UTILISE L'internationalisation////////
     @Bean
     public LocaleResolver localeResolver() {
         SessionLocaleResolver slr = new SessionLocaleResolver();
