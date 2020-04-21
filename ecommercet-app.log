@@ -14228,3 +14228,425 @@ java.lang.NullPointerException: null
 2020-03-30 12:24:25.953  INFO 18478 --- [http-nio-9090-exec-1] c.e.m.web.controller.ClientController    : GET /add client called
 2020-03-30 12:24:28.873  INFO 18478 --- [http-nio-9090-exec-2] c.e.m.web.controller.ClientController    : POST /add client called
 2020-03-30 12:24:38.857  INFO 18478 --- [http-nio-9090-exec-4] c.e.m.web.controller.ClientController    : Get /View Clien
+2020-03-30 14:31:21.978  INFO 18478 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34b9f960: startup date [Mon Mar 30 12:24:19 CEST 2020]; root of context hierarchy
+2020-03-30 14:31:21.980  INFO 18478 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-03-30 14:31:21.980  INFO 18478 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-03-30 14:31:21.981  INFO 18478 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-03-30 14:31:21.983  INFO 18478 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-21 09:39:41.080  INFO 7438 --- [main] c.e.m.MicrocommerceApplication           : Starting MicrocommerceApplication on liance-G5-5587 with PID 7438 (/home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/target/classes started by liance in /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil)
+2020-04-21 09:39:41.095  INFO 7438 --- [main] c.e.m.MicrocommerceApplication           : No active profile set, falling back to default profiles: default
+2020-04-21 09:39:41.715  INFO 7438 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34b9f960: startup date [Tue Apr 21 09:39:41 CEST 2020]; root of context hierarchy
+2020-04-21 09:39:43.085  INFO 7438 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c65c5f9d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-21 09:39:43.451  INFO 7438 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2020-04-21 09:39:43.461  INFO 7438 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-21 09:39:43.462  INFO 7438 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2020-04-21 09:39:43.571  INFO 7438 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-21 09:39:43.571  INFO 7438 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1856 ms
+2020-04-21 09:39:43.725  INFO 7438 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-04-21 09:39:43.727  INFO 7438 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2020-04-21 09:39:43.728  INFO 7438 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2020-04-21 09:39:43.729  INFO 7438 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-04-21 09:39:43.729  INFO 7438 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-04-21 09:39:43.729  INFO 7438 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-04-21 09:39:43.729  INFO 7438 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-04-21 09:39:43.729  INFO 7438 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2020-04-21 09:39:43.729  INFO 7438 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2020-04-21 09:39:44.142  INFO 7438 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-04-21 09:39:44.161  INFO 7438 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-21 09:39:44.241  INFO 7438 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-04-21 09:39:44.242  INFO 7438 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-04-21 09:39:44.244  INFO 7438 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-04-21 09:39:44.272  INFO 7438 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-04-21 09:39:44.352  INFO 7438 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-21 09:39:44.749  INFO 7438 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-04-21 09:39:44.757  INFO 7438 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: account
+2020-04-21 09:39:44.758  INFO 7438 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: account
+2020-04-21 09:39:44.764  INFO 7438 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: client
+2020-04-21 09:39:44.764  INFO 7438 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: client
+2020-04-21 09:39:44.766  INFO 7438 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: panier
+2020-04-21 09:39:44.767  INFO 7438 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: panier
+2020-04-21 09:39:44.768  INFO 7438 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: panier_line
+2020-04-21 09:39:44.769  INFO 7438 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: panier_line
+2020-04-21 09:39:44.770  INFO 7438 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: product
+2020-04-21 09:39:44.771  INFO 7438 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: product
+2020-04-21 09:39:44.773  INFO 7438 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: sexe_ref
+2020-04-21 09:39:44.774  INFO 7438 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: sexe_ref
+2020-04-21 09:39:44.818  INFO 7438 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-21 09:39:44.841  INFO 7438 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/target/classes/data.sql]
+2020-04-21 09:39:44.849  INFO 7438 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/target/classes/data.sql] in 8 ms.
+2020-04-21 09:39:45.064  INFO 7438 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-04-21 09:39:45.511  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Client/{id}],methods=[GET]}" onto public com.ecommerce.microcommerce.dao.domain.Client com.ecommerce.microcommerce.web.api.ClientRestController.afficherUnClient(int)
+2020-04-21 09:39:45.511  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Client/{id}],methods=[DELETE]}" onto public void com.ecommerce.microcommerce.web.api.ClientRestController.supprimerClient(int)
+2020-04-21 09:39:45.512  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Clients],methods=[GET]}" onto public org.springframework.http.converter.json.MappingJacksonValue com.ecommerce.microcommerce.web.api.ClientRestController.listeProduits()
+2020-04-21 09:39:45.512  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Client],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.ecommerce.microcommerce.web.api.ClientRestController.ajouterClient(com.ecommerce.microcommerce.dao.domain.Client)
+2020-04-21 09:39:45.512  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Panier/{id}],methods=[GET]}" onto public com.ecommerce.microcommerce.dao.domain.Panier com.ecommerce.microcommerce.web.api.PanierRestController.afficherUnPanier(int)
+2020-04-21 09:39:45.512  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Panier/{id}],methods=[DELETE]}" onto public void com.ecommerce.microcommerce.web.api.PanierRestController.supprimerPanier(int)
+2020-04-21 09:39:45.513  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/PanierLine],methods=[GET]}" onto public java.util.List<com.ecommerce.microcommerce.dao.domain.Panier_Line> com.ecommerce.microcommerce.web.api.PanierRestController.listePanierLine()
+2020-04-21 09:39:45.514  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Produits],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.ecommerce.microcommerce.web.api.ProductRestController.ajouterProduit(com.ecommerce.microcommerce.dao.domain.Product)
+2020-04-21 09:39:45.515  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Produits/{id}],methods=[DELETE]}" onto public void com.ecommerce.microcommerce.web.api.ProductRestController.supprimerProduit(int)
+2020-04-21 09:39:45.515  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Produits],methods=[PUT]}" onto public void com.ecommerce.microcommerce.web.api.ProductRestController.updateProduit(com.ecommerce.microcommerce.dao.domain.Product)
+2020-04-21 09:39:45.515  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/produits/{prix}],methods=[GET]}" onto public java.util.List<com.ecommerce.microcommerce.dao.domain.Product> com.ecommerce.microcommerce.web.api.ProductRestController.testeDeRequetes(int)
+2020-04-21 09:39:45.515  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Produits],methods=[GET]}" onto public org.springframework.http.converter.json.MappingJacksonValue com.ecommerce.microcommerce.web.api.ProductRestController.listeProduits()
+2020-04-21 09:39:45.515  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Produits/{id}],methods=[GET]}" onto public com.ecommerce.microcommerce.dao.domain.Product com.ecommerce.microcommerce.web.api.ProductRestController.afficherUnProduit(int)
+2020-04-21 09:39:45.516  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addClient],methods=[GET]}" onto public java.lang.String com.ecommerce.microcommerce.web.controller.ClientController.addClient()
+2020-04-21 09:39:45.516  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addClient],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.ecommerce.microcommerce.web.controller.ClientController.addPerson(java.lang.String)
+2020-04-21 09:39:45.516  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/viewClient],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ecommerce.microcommerce.web.controller.ClientController.VoirListeClient(org.springframework.web.servlet.ModelAndView)
+2020-04-21 09:39:45.516  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ecommerce.microcommerce.web.controller.CustomErrorController.handleError(javax.servlet.http.HttpServletRequest)
+2020-04-21 09:39:45.517  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/details/{name}]}" onto public java.lang.String com.ecommerce.microcommerce.web.controller.Home.details(java.lang.String)
+2020-04-21 09:39:45.517  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/simple]}" onto public java.lang.String com.ecommerce.microcommerce.web.controller.Home.simple()
+2020-04-21 09:39:45.517  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.ecommerce.microcommerce.web.controller.Home.VoirIndex()
+2020-04-21 09:39:45.517  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.ecommerce.microcommerce.web.controller.Home.sayHello(org.springframework.ui.Model)
+2020-04-21 09:39:45.518  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/viewPanier/{id}],methods=[GET]}" onto public java.lang.String com.ecommerce.microcommerce.web.controller.PanierController.VoirPanier(org.springframework.ui.ModelMap,int)
+2020-04-21 09:39:45.518  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/viewPanier],methods=[GET]}" onto public java.lang.String com.ecommerce.microcommerce.web.controller.PanierController.VoirPanier()
+2020-04-21 09:39:45.518  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/viewProduct],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ecommerce.microcommerce.web.controller.ProductController.VoirListeProduitetAssignerRating()
+2020-04-21 09:39:45.519  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-04-21 09:39:45.520  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-04-21 09:39:45.520  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-04-21 09:39:45.665  INFO 7438 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-21 09:39:45.666  INFO 7438 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2020-04-21 09:39:45.666  INFO 7438 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-21 09:39:45.667  INFO 7438 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2020-04-21 09:39:45.667  INFO 7438 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2020-04-21 09:39:45.667  INFO 7438 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-21 09:39:45.668  INFO 7438 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-21 09:39:45.668  INFO 7438 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-21 09:39:45.668  INFO 7438 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2020-04-21 09:39:45.668  INFO 7438 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-21 09:39:45.669  INFO 7438 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2020-04-21 09:39:45.670  INFO 7438 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2020-04-21 09:39:45.670  INFO 7438 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-21 09:39:45.670  INFO 7438 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2020-04-21 09:39:45.671  INFO 7438 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-21 09:39:45.671  INFO 7438 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-21 09:39:45.671  INFO 7438 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-21 09:39:45.672  INFO 7438 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2020-04-21 09:39:45.759  INFO 7438 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-04-21 09:39:45.921  INFO 7438 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34b9f960: startup date [Tue Apr 21 09:39:41 CEST 2020]; root of context hierarchy
+2020-04-21 09:39:45.952  INFO 7438 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-21 09:39:45.952  INFO 7438 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-21 09:39:45.974  INFO 7438 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-21 09:39:46.453  INFO 7438 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-04-21 09:39:46.462  INFO 7438 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2020-04-21 09:39:46.502  INFO 7438 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-04-21 09:39:46.502  INFO 7438 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-21 09:39:46.520  INFO 7438 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-21 09:39:46.542  INFO 7438 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-21 09:39:46.697  INFO 7438 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9090 (http)
+2020-04-21 09:39:46.703  INFO 7438 --- [main] c.e.m.MicrocommerceApplication           : Started MicrocommerceApplication in 6.015 seconds (JVM running for 6.728)
+2020-04-21 09:39:56.604  INFO 7438 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-04-21 09:39:56.604  INFO 7438 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-04-21 09:39:56.612  INFO 7438 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2020-04-21 09:41:46.285 ERROR 7438 --- [http-nio-9090-exec-8] c.e.m.w.c.CustomErrorController          : Error with status code 404 happened. Support! Do something about it!
+2020-04-21 09:41:46.478 ERROR 7438 --- [http-nio-9090-exec-8] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'timestamp' cannot be found on object of type 'java.util.HashMap' - maybe not public?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:226) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:94) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:81) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:121) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:262) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$ExpressionResolver.resolvePlaceholder(ErrorMvcAutoConfiguration.java:288) ~[spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.autoconfigure.web.NonRecursivePropertyPlaceholderHelper$NonRecursivePlaceholderResolver.resolvePlaceholder(NonRecursivePropertyPlaceholderHelper.java:56) ~[spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:147) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.autoconfigure.web.NonRecursivePropertyPlaceholderHelper.parseStringValue(NonRecursivePropertyPlaceholderHelper.java:38) ~[spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView.render(ErrorMvcAutoConfiguration.java:226) ~[spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:392) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:395) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:254) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2020-04-21 09:41:46.480 ERROR 7438 --- [http-nio-9090-exec-8] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'timestamp' cannot be found on object of type 'java.util.HashMap' - maybe not public?
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:392) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:395) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:254) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'timestamp' cannot be found on object of type 'java.util.HashMap' - maybe not public?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:226) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:94) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:81) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:121) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:262) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$ExpressionResolver.resolvePlaceholder(ErrorMvcAutoConfiguration.java:288) ~[spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.autoconfigure.web.NonRecursivePropertyPlaceholderHelper$NonRecursivePlaceholderResolver.resolvePlaceholder(NonRecursivePropertyPlaceholderHelper.java:56) ~[spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:147) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.autoconfigure.web.NonRecursivePropertyPlaceholderHelper.parseStringValue(NonRecursivePropertyPlaceholderHelper.java:38) ~[spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView.render(ErrorMvcAutoConfiguration.java:226) ~[spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 25 common frames omitted
+
+2020-04-21 09:42:03.725 ERROR 7438 --- [http-nio-9090-exec-2] c.e.m.w.c.CustomErrorController          : Error with status code 404 happened. Support! Do something about it!
+2020-04-21 09:42:03.726 ERROR 7438 --- [http-nio-9090-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'timestamp' cannot be found on object of type 'java.util.HashMap' - maybe not public?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:226) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:94) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:81) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:121) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:262) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$ExpressionResolver.resolvePlaceholder(ErrorMvcAutoConfiguration.java:288) ~[spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.autoconfigure.web.NonRecursivePropertyPlaceholderHelper$NonRecursivePlaceholderResolver.resolvePlaceholder(NonRecursivePropertyPlaceholderHelper.java:56) ~[spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:147) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.autoconfigure.web.NonRecursivePropertyPlaceholderHelper.parseStringValue(NonRecursivePropertyPlaceholderHelper.java:38) ~[spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView.render(ErrorMvcAutoConfiguration.java:226) ~[spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:392) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:395) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:254) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+
+2020-04-21 09:42:03.727 ERROR 7438 --- [http-nio-9090-exec-2] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'timestamp' cannot be found on object of type 'java.util.HashMap' - maybe not public?
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:982) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:728) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.processRequest(ApplicationDispatcher.java:469) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.doForward(ApplicationDispatcher.java:392) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.ApplicationDispatcher.forward(ApplicationDispatcher.java:311) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:395) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:254) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:177) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) ~[na:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-8.5.23.jar:8.5.23]
+	at java.base/java.lang.Thread.run(Thread.java:834) ~[na:na]
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property or field 'timestamp' cannot be found on object of type 'java.util.HashMap' - maybe not public?
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:226) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:94) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:81) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getValue(SpelNodeImpl.java:121) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:262) ~[spring-expression-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$ExpressionResolver.resolvePlaceholder(ErrorMvcAutoConfiguration.java:288) ~[spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.boot.autoconfigure.web.NonRecursivePropertyPlaceholderHelper$NonRecursivePlaceholderResolver.resolvePlaceholder(NonRecursivePropertyPlaceholderHelper.java:56) ~[spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:147) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.autoconfigure.web.NonRecursivePropertyPlaceholderHelper.parseStringValue(NonRecursivePropertyPlaceholderHelper.java:38) ~[spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:126) ~[spring-core-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.boot.autoconfigure.web.ErrorMvcAutoConfiguration$SpelView.render(ErrorMvcAutoConfiguration.java:226) ~[spring-boot-autoconfigure-1.5.9.RELEASE.jar:1.5.9.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1286) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1041) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:984) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) ~[spring-webmvc-4.3.13.RELEASE.jar:4.3.13.RELEASE]
+	... 25 common frames omitted
+
+2020-04-21 09:42:28.683  INFO 7438 --- [http-nio-9090-exec-4] c.e.m.web.controller.ProductController   : GET /View Product called
+2020-04-21 09:42:30.463 ERROR 7438 --- [http-nio-9090-exec-4] c.e.m.service.ProductRatingServiceImpl   : rating found for Twilight happened!
+2020-04-21 09:42:30.876 ERROR 7438 --- [http-nio-9090-exec-4] c.e.m.service.ProductRatingServiceImpl   : rating found for Matrix happened!
+2020-04-21 09:42:31.383 ERROR 7438 --- [http-nio-9090-exec-4] c.e.m.service.ProductRatingServiceImpl   : rating found for Rambo happened!
+2020-04-21 09:42:31.569  INFO 7438 --- [http-nio-9090-exec-5] c.e.m.web.controller.ProductController   : GET /View Product called
+2020-04-21 09:42:31.611 ERROR 7438 --- [http-nio-9090-exec-5] c.e.m.service.ProductRatingServiceImpl   : rating found for Twilight happened!
+2020-04-21 09:42:31.650 ERROR 7438 --- [http-nio-9090-exec-5] c.e.m.service.ProductRatingServiceImpl   : rating found for Matrix happened!
+2020-04-21 09:42:31.715 ERROR 7438 --- [http-nio-9090-exec-5] c.e.m.service.ProductRatingServiceImpl   : rating found for Rambo happened!
+2020-04-21 09:56:25.437  INFO 7438 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34b9f960: startup date [Tue Apr 21 09:39:41 CEST 2020]; root of context hierarchy
+2020-04-21 09:56:25.439  INFO 7438 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-04-21 09:56:25.440  INFO 7438 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-04-21 09:56:25.440  INFO 7438 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-04-21 09:56:25.442  INFO 7438 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-21 09:56:41.219  INFO 8053 --- [main] c.e.m.MicrocommerceApplication           : Starting MicrocommerceApplication on liance-G5-5587 with PID 8053 (/home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/target/classes started by liance in /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil)
+2020-04-21 09:56:41.221  INFO 8053 --- [main] c.e.m.MicrocommerceApplication           : No active profile set, falling back to default profiles: default
+2020-04-21 09:56:41.393  INFO 8053 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34b9f960: startup date [Tue Apr 21 09:56:41 CEST 2020]; root of context hierarchy
+2020-04-21 09:56:42.442  INFO 8053 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9e039efa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-21 09:56:42.795  INFO 8053 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 9090 (http)
+2020-04-21 09:56:42.806  INFO 8053 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-21 09:56:42.807  INFO 8053 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.23
+2020-04-21 09:56:42.891  INFO 8053 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-21 09:56:42.891  INFO 8053 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1505 ms
+2020-04-21 09:56:43.036  INFO 8053 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2020-04-21 09:56:43.038  INFO 8053 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'webServlet' to [/h2-console/*]
+2020-04-21 09:56:43.039  INFO 8053 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2020-04-21 09:56:43.040  INFO 8053 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2020-04-21 09:56:43.040  INFO 8053 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2020-04-21 09:56:43.040  INFO 8053 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2020-04-21 09:56:43.040  INFO 8053 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2020-04-21 09:56:43.040  INFO 8053 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2020-04-21 09:56:43.040  INFO 8053 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2020-04-21 09:56:43.315  INFO 8053 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-04-21 09:56:43.327  INFO 8053 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-21 09:56:43.385  INFO 8053 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2020-04-21 09:56:43.386  INFO 8053 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2020-04-21 09:56:43.387  INFO 8053 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2020-04-21 09:56:43.411  INFO 8053 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-04-21 09:56:43.478  INFO 8053 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2020-04-21 09:56:43.794  INFO 8053 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2020-04-21 09:56:43.803  INFO 8053 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: account
+2020-04-21 09:56:43.804  INFO 8053 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: account
+2020-04-21 09:56:43.810  INFO 8053 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: client
+2020-04-21 09:56:43.811  INFO 8053 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: client
+2020-04-21 09:56:43.812  INFO 8053 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: panier
+2020-04-21 09:56:43.813  INFO 8053 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: panier
+2020-04-21 09:56:43.815  INFO 8053 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: panier_line
+2020-04-21 09:56:43.816  INFO 8053 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: panier_line
+2020-04-21 09:56:43.818  INFO 8053 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: product
+2020-04-21 09:56:43.818  INFO 8053 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: product
+2020-04-21 09:56:43.821  INFO 8053 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: sexe_ref
+2020-04-21 09:56:43.821  INFO 8053 --- [main] rmationExtractorJdbcDatabaseMetaDataImpl : HHH000262: Table not found: sexe_ref
+2020-04-21 09:56:43.870  INFO 8053 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-21 09:56:43.894  INFO 8053 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executing SQL script from URL [file:/home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/target/classes/data.sql]
+2020-04-21 09:56:43.901  INFO 8053 --- [main] o.s.jdbc.datasource.init.ScriptUtils     : Executed SQL script from URL [file:/home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/target/classes/data.sql] in 7 ms.
+2020-04-21 09:56:44.094  INFO 8053 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2020-04-21 09:56:44.477  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Client/{id}],methods=[GET]}" onto public com.ecommerce.microcommerce.dao.domain.Client com.ecommerce.microcommerce.web.api.ClientRestController.afficherUnClient(int)
+2020-04-21 09:56:44.477  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Client/{id}],methods=[DELETE]}" onto public void com.ecommerce.microcommerce.web.api.ClientRestController.supprimerClient(int)
+2020-04-21 09:56:44.477  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Clients],methods=[GET]}" onto public org.springframework.http.converter.json.MappingJacksonValue com.ecommerce.microcommerce.web.api.ClientRestController.listeProduits()
+2020-04-21 09:56:44.477  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Client],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.ecommerce.microcommerce.web.api.ClientRestController.ajouterClient(com.ecommerce.microcommerce.dao.domain.Client)
+2020-04-21 09:56:44.478  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Panier/{id}],methods=[GET]}" onto public com.ecommerce.microcommerce.dao.domain.Panier com.ecommerce.microcommerce.web.api.PanierRestController.afficherUnPanier(int)
+2020-04-21 09:56:44.478  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Panier/{id}],methods=[DELETE]}" onto public void com.ecommerce.microcommerce.web.api.PanierRestController.supprimerPanier(int)
+2020-04-21 09:56:44.478  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/PanierLine],methods=[GET]}" onto public java.util.List<com.ecommerce.microcommerce.dao.domain.Panier_Line> com.ecommerce.microcommerce.web.api.PanierRestController.listePanierLine()
+2020-04-21 09:56:44.480  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Produits],methods=[GET]}" onto public org.springframework.http.converter.json.MappingJacksonValue com.ecommerce.microcommerce.web.api.ProductRestController.listeProduits()
+2020-04-21 09:56:44.480  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Produits/{id}],methods=[DELETE]}" onto public void com.ecommerce.microcommerce.web.api.ProductRestController.supprimerProduit(int)
+2020-04-21 09:56:44.481  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Produits],methods=[PUT]}" onto public void com.ecommerce.microcommerce.web.api.ProductRestController.updateProduit(com.ecommerce.microcommerce.dao.domain.Product)
+2020-04-21 09:56:44.481  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/test/produits/{prix}],methods=[GET]}" onto public java.util.List<com.ecommerce.microcommerce.dao.domain.Product> com.ecommerce.microcommerce.web.api.ProductRestController.testeDeRequetes(int)
+2020-04-21 09:56:44.481  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Produits/{id}],methods=[GET]}" onto public com.ecommerce.microcommerce.dao.domain.Product com.ecommerce.microcommerce.web.api.ProductRestController.afficherUnProduit(int)
+2020-04-21 09:56:44.481  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/Produits],methods=[POST]}" onto public org.springframework.http.ResponseEntity<java.lang.Void> com.ecommerce.microcommerce.web.api.ProductRestController.ajouterProduit(com.ecommerce.microcommerce.dao.domain.Product)
+2020-04-21 09:56:44.482  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addClient],methods=[GET]}" onto public java.lang.String com.ecommerce.microcommerce.web.controller.ClientController.addClient()
+2020-04-21 09:56:44.482  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/addClient],methods=[POST]}" onto public org.springframework.web.servlet.ModelAndView com.ecommerce.microcommerce.web.controller.ClientController.addPerson(java.lang.String)
+2020-04-21 09:56:44.482  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/viewClient],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ecommerce.microcommerce.web.controller.ClientController.VoirListeClient(org.springframework.web.servlet.ModelAndView)
+2020-04-21 09:56:44.482  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ecommerce.microcommerce.web.controller.CustomErrorController.handleError(javax.servlet.http.HttpServletRequest)
+2020-04-21 09:56:44.483  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/details/{name}]}" onto public java.lang.String com.ecommerce.microcommerce.web.controller.Home.details(java.lang.String)
+2020-04-21 09:56:44.483  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/simple]}" onto public java.lang.String com.ecommerce.microcommerce.web.controller.Home.simple()
+2020-04-21 09:56:44.483  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.ecommerce.microcommerce.web.controller.Home.VoirIndex()
+2020-04-21 09:56:44.483  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello],methods=[GET]}" onto public java.lang.String com.ecommerce.microcommerce.web.controller.Home.sayHello(org.springframework.ui.Model)
+2020-04-21 09:56:44.483  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/viewPanier/{id}],methods=[GET]}" onto public java.lang.String com.ecommerce.microcommerce.web.controller.PanierController.VoirPanier(org.springframework.ui.ModelMap,int)
+2020-04-21 09:56:44.484  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/viewPanier],methods=[GET]}" onto public java.lang.String com.ecommerce.microcommerce.web.controller.PanierController.VoirPanier()
+2020-04-21 09:56:44.484  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/viewProduct],methods=[GET]}" onto public org.springframework.web.servlet.ModelAndView com.ecommerce.microcommerce.web.controller.ProductController.VoirListeProduitetAssignerRating()
+2020-04-21 09:56:44.485  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2020-04-21 09:56:44.486  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2020-04-21 09:56:44.486  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2020-04-21 09:56:44.609  INFO 8053 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-21 09:56:44.609  INFO 8053 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-21 09:56:44.610  INFO 8053 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-21 09:56:44.610  INFO 8053 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2020-04-21 09:56:44.610  INFO 8053 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-21 09:56:44.611  INFO 8053 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-21 09:56:44.611  INFO 8053 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/logfile || /logfile.json],methods=[GET || HEAD]}" onto public void org.springframework.boot.actuate.endpoint.mvc.LogFileMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws javax.servlet.ServletException,java.io.IOException
+2020-04-21 09:56:44.611  INFO 8053 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-21 09:56:44.612  INFO 8053 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2020-04-21 09:56:44.612  INFO 8053 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-21 09:56:44.613  INFO 8053 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2020-04-21 09:56:44.613  INFO 8053 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-21 09:56:44.613  INFO 8053 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2020-04-21 09:56:44.614  INFO 8053 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2020-04-21 09:56:44.614  INFO 8053 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-21 09:56:44.615  INFO 8053 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2020-04-21 09:56:44.615  INFO 8053 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2020-04-21 09:56:44.615  INFO 8053 --- [main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2020-04-21 09:56:44.692  INFO 8053 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2020-04-21 09:56:44.801  INFO 8053 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34b9f960: startup date [Tue Apr 21 09:56:41 CEST 2020]; root of context hierarchy
+2020-04-21 09:56:44.831  INFO 8053 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-21 09:56:44.831  INFO 8053 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-21 09:56:44.851  INFO 8053 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-21 09:56:45.213  INFO 8053 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2020-04-21 09:56:45.222  INFO 8053 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2020-04-21 09:56:45.272  INFO 8053 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2020-04-21 09:56:45.273  INFO 8053 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2020-04-21 09:56:45.288  INFO 8053 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 1 custom documentation plugin(s)
+2020-04-21 09:56:45.312  INFO 8053 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2020-04-21 09:56:45.440  INFO 8053 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 9090 (http)
+2020-04-21 09:56:45.445  INFO 8053 --- [main] c.e.m.MicrocommerceApplication           : Started MicrocommerceApplication in 4.509 seconds (JVM running for 4.824)
+2020-04-21 09:56:49.050  INFO 8053 --- [http-nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2020-04-21 09:56:49.050  INFO 8053 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2020-04-21 09:56:49.058  INFO 8053 --- [http-nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 8 ms
+2020-04-21 09:56:49.077  INFO 8053 --- [http-nio-9090-exec-1] c.e.m.web.controller.ProductController   : GET /View Product called
+2020-04-21 09:57:02.726  INFO 8053 --- [Thread-3] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@34b9f960: startup date [Tue Apr 21 09:56:41 CEST 2020]; root of context hierarchy
+2020-04-21 09:57:02.728  INFO 8053 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2020-04-21 09:57:02.728  INFO 8053 --- [Thread-3] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2020-04-21 09:57:02.729  INFO 8053 --- [Thread-3] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2020-04-21 09:57:02.731  INFO 8053 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
