@@ -10,16 +10,10 @@ import java.util.List;
 
 @Service
 public class ProductServiceImpl implements ProductService {
-
-    private ProductRatingService productRatingService;
-    private ProductRepository productRepository;
-
     @Autowired
-    public ProductServiceImpl(ProductRepository productRepository, ProductRatingService productRatingService) {
-        super();
-        this.productRepository = productRepository;
-        this.productRatingService = productRatingService;
-    }
+    private ProductRatingService productRatingService;
+    @Autowired
+    private ProductRepository productRepository;
 
     public void assignRating(List<Product> listItems) {
         //  List<Product> listItems = productRepository.findAll();

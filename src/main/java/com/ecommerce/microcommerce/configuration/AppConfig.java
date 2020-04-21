@@ -19,11 +19,13 @@ import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 import java.util.List;
 import java.util.Locale;
 
-@Component
-@ConfigurationProperties("mes-configs")
+
 @Configuration
 public class AppConfig implements WebMvcConfigurer {
 
+
+
+    ////// ICI ; UTILISE L'internationalisation///////////////
     @Bean
     public LocaleResolver localeResolver() {
         SessionLocaleResolver slr = new SessionLocaleResolver();
