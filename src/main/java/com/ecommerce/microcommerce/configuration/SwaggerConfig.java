@@ -19,4 +19,6 @@ public class SwaggerConfig {
                 .paths(PathSelectors.regex("/Produits.*"))
                 .build();
     }
+    
+    
 }
