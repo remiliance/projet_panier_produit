@@ -12,4 +12,6 @@ public class Account implements Serializable {
 
     @ManyToOne (fetch=FetchType.LAZY)
     private Client client;
+
+
 }
