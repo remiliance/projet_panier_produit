@@ -1,13 +1,17 @@
 node {
+    def app
     stage('Clone') {
-        git 'https://github.com/remiliance/projet_panier_produit.git'
+        checkout scm
     }
     stage('Build') {
         echo 'debut du build'
-          sh 'mvn -DskipTests=true package' 
+         app=docker.build("remil/java")
     }
-    stage('Run') {
-        echo 'debut du run'
-        sh label: '', script: 'java -jar target/microcommerce-0.0.1-SNAPSHOT.jar'
+    stage('Test') {
+        echo 'debut du Test'
+        docker.image ('remil/java').withRun (' -p 80:80') { c->
+        sh 'docker ps'
+        sh 'curl localhost'
+        }
     }
 }
