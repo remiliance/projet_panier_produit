@@ -1,0 +1,4 @@
+com/ecommerce/microcommerce/service/ProductServiceTest.class
+com/ecommerce/microcommerce/web/controller/ClientRestControllerTest.class
+com/ecommerce/microcommerce/E2E/AddClientE2ETest.class
+com/ecommerce/microcommerce/web/controller/ClientControllerTest.class
