@@ -1,7 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.ecommerce.microcommerce.web.controller.ClientRestControllerTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.033 sec <<< FAILURE! - in com.ecommerce.microcommerce.web.controller.ClientRestControllerTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.031 sec <<< FAILURE! - in com.ecommerce.microcommerce.web.controller.ClientRestControllerTest
 initializationError(com.ecommerce.microcommerce.web.controller.ClientRestControllerTest)  Time elapsed: 0.009 sec  <<< ERROR!
 java.lang.NoClassDefFoundError: org/springframework/core/annotation/MergedAnnotations
 	at org.springframework.test.context.support.DynamicPropertiesContextCustomizerFactory.isAnnotated(DynamicPropertiesContextCustomizerFactory.java:53)

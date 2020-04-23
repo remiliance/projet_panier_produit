@@ -20,11 +20,13 @@
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/dao/domain/Panier_Line.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/service/ProductService.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/service/ClientService.java
+/home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/configuration/GlobalPropertiesConfiguration.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/dao/domain/Sexe_ref.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/service/ProductRatingServiceImpl.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/MicrocommerceApplication.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/web/controller/CustomErrorController.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/web/api/PanierRestController.java
+/home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/configuration/ApplicationPropertiesConfiguration.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/dao/domain/Client.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/web/controller/Home.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/service/ProductRatingService.java
