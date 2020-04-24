@@ -1,6 +1,6 @@
 node {
     def registryProjet='registry.gitlab.com/remiliance/registrydockerimage'
-    def IMAGE="${registryProjet}:version-${env.BUILD_ID}""
+    def IMAGE="${registryProjet}:version-${env.BUILD_ID}"
     stage('Clone') {
         git 'https://github.com/remiliance/projet_panier_produit.git'
     }
