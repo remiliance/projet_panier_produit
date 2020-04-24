@@ -19,7 +19,7 @@ public class Home {
         return "Hello " + name;
     }
 
-    @GetMapping(value = "/index")
+    @GetMapping(value = "/")
     public String VoirIndex() {
         return "html/index";
     }
