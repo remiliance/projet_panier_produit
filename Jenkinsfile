@@ -1,13 +1,23 @@
 node {
-    def app
+    def registryProjet='registry.gitlab.com/remiliance/registrydockerimage'
+    def IMAGE="${registryProjet}:version-${env.BUILD_ID}""
     stage('Clone') {
         git 'https://github.com/remiliance/projet_panier_produit.git'
     }
-    stage('Build') {
+    def img=stage('Build') {
         echo 'debut du build'
-          sh 'mvn -DskipTests=true package' 
+        sh 'mvn -DskipTests=true package' 
+        docker.build("$IMAGE", '.')
     }
-    stage('Build') {
-         app=docker.build("remil/java")
+    stage('Run') {
+	    img.withRun("--name run-$BUILD_ID -p 80:80") { c-> 
+    	sh 'curl localhost'
+	    }
+    }
+    stage('Push') {
+	    docker.withRegistry('https://registry.gitlab.com','reg1') {
+		img.push 'latest'
+		img.push()
+       }
     }
 }
