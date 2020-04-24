@@ -1,12 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: com.ecommerce.microcommerce.service.ProductServiceTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.234 sec <<< FAILURE! - in com.ecommerce.microcommerce.service.ProductServiceTest
-testProductreturnsRating(com.ecommerce.microcommerce.service.ProductServiceTest)  Time elapsed: 0.025 sec  <<< ERROR!
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.237 sec <<< FAILURE! - in com.ecommerce.microcommerce.service.ProductServiceTest
+testProductreturnsRating(com.ecommerce.microcommerce.service.ProductServiceTest)  Time elapsed: 0.023 sec  <<< ERROR!
 java.lang.NoSuchMethodError: 'org.assertj.core.api.AbstractCharSequenceAssert org.assertj.core.api.Assertions.assertThat(java.lang.String)'
 	at com.ecommerce.microcommerce.service.ProductServiceTest.testProductreturnsRating(ProductServiceTest.java:65)
 
-testProductreturnsAllItemsFromRepository(com.ecommerce.microcommerce.service.ProductServiceTest)  Time elapsed: 0.078 sec  <<< ERROR!
+testProductreturnsAllItemsFromRepository(com.ecommerce.microcommerce.service.ProductServiceTest)  Time elapsed: 0.077 sec  <<< ERROR!
 java.lang.NoSuchMethodError: 'org.assertj.core.api.AbstractCharSequenceAssert org.assertj.core.api.Assertions.assertThat(java.lang.String)'
 	at com.ecommerce.microcommerce.service.ProductServiceTest.testProductreturnsAllItemsFromRepository(ProductServiceTest.java:49)
 
