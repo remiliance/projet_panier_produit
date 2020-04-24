@@ -1,5 +1,6 @@
 pipeline {
     agent any
+    stages {
     def registryProjet='registry.gitlab.com/remiliance/registrydockerimage'
     def IMAGE="${registryProjet}:version-${env.BUILD_ID}"
     stage('Clone') {
@@ -17,7 +18,7 @@ pipeline {
 		sh 'sleep 30s'
 		sh 'curl 127.0.0.1:9099'
 		sh 'docker ps'
-		}
+
     }
     stage('Push') {
 	    docker.withRegistry('https://registry.gitlab.com','reg1') {
