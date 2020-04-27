@@ -16,6 +16,7 @@ node {
 		sh 'sleep 30s'
 		sh 'curl 127.0.0.1:9099'
 		sh 'docker ps'
+	    }
 
     }
     stage('Push') {
