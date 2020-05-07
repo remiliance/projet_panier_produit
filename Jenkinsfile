@@ -1,6 +1,4 @@
-pipeline {
-    agent any
-    stages {
+node {
     def registryProjet='registry.gitlab.com/remiliance/registrydockerimage'
     def IMAGE="${registryProjet}:version-${env.BUILD_ID}"
     stage('Clone') {
@@ -26,5 +24,4 @@ pipeline {
 		img.push()
        }
     }
-}
 }
