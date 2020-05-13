@@ -32,7 +32,7 @@
     <property name="java.class.version" value="55.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="5.3.0-42-generic"/>
+    <property name="os.version" value="5.3.0-51-generic"/>
     <property name="idea.version2019.3.1" value="true"/>
     <property name="user.home" value="/home/liance"/>
     <property name="user.timezone" value="Europe/Paris"/>
@@ -43,7 +43,7 @@
     <property name="java.class.path" value="/home/liance/Bureau/idea-IC-193.5662.53/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.3.1 package"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.3.1 install"/>
     <property name="java.home" value="/home/liance/Bureau/idea-IC-193.5662.53/jbr"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
@@ -101,24 +101,24 @@
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:155)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
 ]]></error>
-    <system-out><![CDATA[16:02:12.087 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ecommerce.microcommerce.web.controller.ClientRestControllerTest]
-16:02:12.095 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-16:02:12.109 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-16:02:12.133 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
-16:02:12.154 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest], using SpringBootContextLoader
-16:02:12.159 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest]: class path resource [com/ecommerce/microcommerce/web/controller/ClientRestControllerTest-context.xml] does not exist
-16:02:12.160 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest]: class path resource [com/ecommerce/microcommerce/web/controller/ClientRestControllerTestContext.groovy] does not exist
-16:02:12.160 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-16:02:12.161 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest]: ClientRestControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
-16:02:12.251 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ecommerce.microcommerce.web.controller.ClientRestControllerTest]
-16:02:12.252 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
-16:02:12.252 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
-16:02:12.252 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
-16:02:12.253 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest], using SpringBootContextLoader
-16:02:12.253 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest]: class path resource [com/ecommerce/microcommerce/web/controller/ClientRestControllerTest-context.xml] does not exist
-16:02:12.254 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest]: class path resource [com/ecommerce/microcommerce/web/controller/ClientRestControllerTestContext.groovy] does not exist
-16:02:12.254 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-16:02:12.254 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest]: ClientRestControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+    <system-out><![CDATA[15:38:25.380 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ecommerce.microcommerce.web.controller.ClientRestControllerTest]
+15:38:25.388 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+15:38:25.400 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+15:38:25.424 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
+15:38:25.447 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest], using SpringBootContextLoader
+15:38:25.452 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest]: class path resource [com/ecommerce/microcommerce/web/controller/ClientRestControllerTest-context.xml] does not exist
+15:38:25.453 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest]: class path resource [com/ecommerce/microcommerce/web/controller/ClientRestControllerTestContext.groovy] does not exist
+15:38:25.453 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:38:25.454 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest]: ClientRestControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+15:38:25.548 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ecommerce.microcommerce.web.controller.ClientRestControllerTest]
+15:38:25.548 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+15:38:25.548 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+15:38:25.548 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest] from class [org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper]
+15:38:25.549 [main] INFO org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest], using SpringBootContextLoader
+15:38:25.550 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest]: class path resource [com/ecommerce/microcommerce/web/controller/ClientRestControllerTest-context.xml] does not exist
+15:38:25.550 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest]: class path resource [com/ecommerce/microcommerce/web/controller/ClientRestControllerTestContext.groovy] does not exist
+15:38:25.550 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:38:25.550 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.ecommerce.microcommerce.web.controller.ClientRestControllerTest]: ClientRestControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
 ]]></system-out>
   </testcase>
 </testsuite>

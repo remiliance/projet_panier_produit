@@ -1,4 +1,5 @@
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/web/api/ProductRestController.java
+/home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/kafka/consumer/ConsumerKafka.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/web/controller/ProductController.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/web/api/ClientRestController.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/dao/domain/Product.java
@@ -7,6 +8,7 @@
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/actuator/HealthCheck.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/service/ClientServiceImpl.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/web/controller/ClientController.java
+/home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/kafka/config/KafkaConsumerConfig.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/web/controller/PanierController.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/web/exceptions/ProduitIntrouvableException.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/dao/Jpa/JpaClientRepository.java
@@ -18,6 +20,7 @@
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/dao/Jpa/JpaProductRepository.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/service/ProductServiceImpl.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/dao/domain/Panier_Line.java
+/home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/kafka/config/KafkaProducerConfig.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/service/ProductService.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/service/ClientService.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/configuration/GlobalPropertiesConfiguration.java
@@ -25,9 +28,11 @@
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/service/ProductRatingServiceImpl.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/MicrocommerceApplication.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/web/controller/CustomErrorController.java
+/home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/kafka/producer/Producer.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/web/api/PanierRestController.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/configuration/ApplicationPropertiesConfiguration.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/dao/domain/Client.java
+/home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/web/api/KafkaController.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/web/controller/Home.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/service/ProductRatingService.java
 /home/liance/Documents/monprojetPanier_Produit/Mcommerce-byRemil/src/main/java/com/ecommerce/microcommerce/dao/repository/PanierRepository.java
