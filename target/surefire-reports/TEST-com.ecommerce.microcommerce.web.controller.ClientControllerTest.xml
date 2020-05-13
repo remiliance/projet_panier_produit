@@ -32,7 +32,7 @@
     <property name="java.class.version" value="55.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="5.3.0-42-generic"/>
+    <property name="os.version" value="5.3.0-51-generic"/>
     <property name="idea.version2019.3.1" value="true"/>
     <property name="user.home" value="/home/liance"/>
     <property name="user.timezone" value="Europe/Paris"/>
@@ -43,7 +43,7 @@
     <property name="java.class.path" value="/home/liance/Bureau/idea-IC-193.5662.53/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar"/>
     <property name="java.vm.specification.version" value="11"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.3.1 package"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.3.1 install"/>
     <property name="java.home" value="/home/liance/Bureau/idea-IC-193.5662.53/jbr"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
