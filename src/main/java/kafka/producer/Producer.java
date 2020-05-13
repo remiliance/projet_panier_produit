@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 public class Producer {
 
     private static final Logger logger = LoggerFactory.getLogger(Producer.class);
-    private static final String TOPIC = "toto";
+    private static final String TOPIC = "blabla";
 
 
     @Autowired
