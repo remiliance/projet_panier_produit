@@ -131,6 +131,18 @@
 			<artifactId>jaxb-api</artifactId>
 			<version>2.2.11</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.avro/avro-maven-plugin -->
+		<dependency>
+			<groupId>org.apache.avro</groupId>
+			<artifactId>avro-maven-plugin</artifactId>
+			<version>1.9.2</version>
+		</dependency>
+		<!-- avro -->
+		<dependency>
+			<groupId>org.apache.avro</groupId>
+			<artifactId>avro</artifactId>
+			<version>1.9.2</version>
+		</dependency>
 
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
@@ -243,6 +255,23 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+			<groupId>org.apache.avro</groupId>
+			<artifactId>avro-maven-plugin</artifactId>
+				<version>1.9.2</version>
+			<executions>
+				<execution>
+					<phase>generate-sources</phase>
+					<goals>
+						<goal>schema</goal>
+					</goals>
+					<configuration>
+						<sourceDirectory>${project.basedir}/src/main/resources/avro/</sourceDirectory>
+						<outputDirectory>${project.build.directory}/generated/avro</outputDirectory>
+					</configuration>
+				</execution>
+			</executions>
+		</plugin>
 		</plugins>
 	</build>
 
